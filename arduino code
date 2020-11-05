@@ -1,0 +1,33 @@
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(12,11,10,9,8,7);
+
+void setup()
+
+{
+
+	lcd.begin(16,2);
+
+  	lcd.setCursor(4,0);
+
+  	lcd.print("SMART ARABIC");
+
+  	lcd.setCursor(6,1);
+
+  	lcd.print("PROJECTS");
+
+  	delay(6000);
+
+  	lcd.clear();
+
+  	lcd.setCursor(0,0);
+
+  	lcd.print("made by : ");
+
+  	lcd.setCursor(0,1);
+
+  	lcd.print("BILAL HASSAN");
+
+}
+
+void loop(){}
